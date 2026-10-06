@@ -6,100 +6,254 @@
 <title>Renshu — Saturday's game, Tuesday's practice</title>
 <meta name="description" content="Renshu turns ordinary video of a youth basketball game into next week's practice plan.">
 <!-- Store links: replace APP_STORE_URL and GOOGLE_PLAY_URL below (2 of each) once the listings are live. -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#0F1B2D}
-a{color:#F2F4F7}a:hover{color:#FFB37A}
-</style>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&text=%E7%B7%B4%E7%BF%92&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div style="min-height: 100vh; background: #0F1B2D; color: #F2F4F7; font-family: 'Noto Sans JP', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+<div class="page">
 
-<header style="max-width: 1160px; margin: 0 auto; padding: 24px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
-<div style="display: flex; align-items: baseline; gap: 10px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -0.02em">Renshu</span>
-<span style="font-size: 15px; color: #A9B4C4">練習</span>
-</div>
-<nav style="display: flex; gap: 24px; flex-wrap: wrap; font-size: 15px">
-<a href="#how" style="text-decoration: none">How it works</a>
-<a href="#download" style="text-decoration: none">Download</a>
+<header class="nav">
+<a class="brand" href="index.html">Renshu <span lang="ja">練習</span></a>
+<nav class="nav-links" aria-label="Main">
+<a href="#how">How it works</a>
+<a href="#privacy">Privacy</a>
+<a href="support.html">Support</a>
 </nav>
+<a class="btn btn-outline" href="#download">Download App</a>
 </header>
 
-<section style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 88px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<p style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #FF8A3D">For youth basketball coaches</p>
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(44px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.03em">Saturday's game,<br>Tuesday's practice.</h1>
-<p style="margin: 0; max-width: 34rem; font-size: 19px; color: #C9D2DE">Renshu turns ordinary video of a youth match into next week's practice plan — so you spend your evenings coaching, not rewatching footage.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
-<a href="APP_STORE_URL" style="display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 22px; border-radius: 12px; background: #F2F4F7; color: #0F1B2D; text-decoration: none; font-weight: 700">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>
-<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 12px; font-weight: 500">Download on the</span><span style="font-size: 18px">App Store</span></span>
-</a>
-<a href="GOOGLE_PLAY_URL" style="display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 22px; border-radius: 12px; background: transparent; border: 2px solid #F2F4F7; color: #F2F4F7; text-decoration: none; font-weight: 700">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l14 9-14 9z"></path></svg>
-<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 12px; font-weight: 500">Get it on</span><span style="font-size: 18px">Google Play</span></span>
-</a>
+<main>
+
+<section class="hero">
+<h1 class="display"><span>Saturday&rsquo;s game,</span><span class="light">Tuesday&rsquo;s practice.</span></h1>
+
+<div class="hero-panel">
+<svg class="play-line" viewBox="0 0 1000 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<path class="pass" d="M476 254 L622 216"></path>
+<path class="cut" pathLength="1" d="M356 345 C366 240 416 120 522 112 C600 106 610 200 668 204"></path>
+<path class="tip" d="M647 188.7 L668 204 L645.1 216.2"></path>
+<circle class="mark" cx="455" cy="262" r="15"></circle>
+<path class="mark" d="M547 47 l26 26 m0 -26 l-26 26"></path>
+</svg>
+<div class="hero-copy">
+<p class="lede">Renshu turns ordinary video of a youth match into next week's practice plan — so you spend your evenings coaching, not rewatching footage.</p>
+<a class="btn btn-primary" href="#how">See how it works</a>
+<div class="stores">
+<p>For youth basketball coaches.<br>On iPhone and Android.</p>
+<div class="badges">
+<a class="store-badge" href="APP_STORE_URL"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="144" height="48"></a>
+<a class="store-badge" href="GOOGLE_PLAY_URL"><img src="assets/google-play-badge.png" alt="Get it on Google Play" width="161" height="48"></a>
+</div>
+</div>
 </div>
 </div>
 
-<div style="flex: 1 1 320px; display: flex; justify-content: center">
-<div style="width: 300px; max-width: 100%; border-radius: 40px; background: #1B2A40; padding: 14px; border: 1px solid #2C3D57">
-<div style="border-radius: 28px; background: #F2F4F7; color: #0F1B2D; padding: 22px 18px; display: flex; flex-direction: column; gap: 14px">
-<div style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6778">Tuesday practice · 90 min</div>
-<div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 800; line-height: 1.15">Get back on defense</div>
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DCE2EA"><span style="width: 28px; height: 28px; border-radius: 50%; background: #FF8A3D; color: #0F1B2D; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px">1</span><span style="font-size: 14px; font-weight: 500">3-on-2 transition recovery</span></div>
-<div style="display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DCE2EA"><span style="width: 28px; height: 28px; border-radius: 50%; background: #FF8A3D; color: #0F1B2D; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px">2</span><span style="font-size: 14px; font-weight: 500">Closeout &amp; contest</span></div>
-<div style="display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DCE2EA"><span style="width: 28px; height: 28px; border-radius: 50%; background: #FF8A3D; color: #0F1B2D; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px">3</span><span style="font-size: 14px; font-weight: 500">4-on-4 shell defense</span></div>
+<div class="phone hero-phone" role="img" aria-label="The Renshu app showing Tuesday's practice plan, Get back on defense, with three drills built from Saturday's game video.">
+<div class="phone-screen" aria-hidden="true">
+<div class="ps-status"><span>9:41</span><i></i></div>
+<div class="ps-top">
+<p class="ps-label">Tuesday practice · 90 min</p>
+<p class="ps-title">Get back on defense</p>
+<svg class="ps-court" viewBox="0 0 240 112" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+<rect x="1" y="1" width="238" height="110" rx="8"></rect>
+<path d="M92 1v46h56V1"></path>
+<path d="M100 47a20 20 0 0 0 40 0"></path>
+<path d="M34 1v8a86 86 0 0 0 172 0V1"></path>
+<circle cx="120" cy="12" r="4"></circle>
+<g class="team-a"><circle cx="120" cy="66" r="5"></circle><circle cx="82" cy="52" r="5"></circle><circle cx="158" cy="52" r="5"></circle><circle cx="62" cy="22" r="5"></circle><circle cx="178" cy="22" r="5"></circle></g>
+</svg>
 </div>
-<div style="font-size: 12px; color: #5B6778">Built from Saturday's game video</div>
+<div class="ps-body">
+<p class="ps-label">Drills</p>
+<ol class="ps-list">
+<li><span>1</span>3-on-2 transition recovery</li>
+<li><span>2</span>Closeout &amp; contest</li>
+<li><span>3</span>4-on-4 shell defense</li>
+</ol>
+<p class="ps-note">Built from Saturday's game video</p>
+</div>
+<div class="ps-home"></div>
+</div>
+</div>
+</section>
+
+<!-- TODO(human): these three facts are the page's proof. They are true today but generic.
+     Replace them with numbers only the team knows, for example games analysed so far or
+     minutes from upload to a finished plan. Keep each to a number plus a two-line label. -->
+<ul class="facts">
+<li class="fact"><b>1</b><span class="caps-light">Phone, filmed<br>from the stands</span></li>
+<li class="fact"><b>0</b><span class="caps-light">Tripods or<br>special cameras</span></li>
+<li class="fact"><b>3</b><span class="caps-light">Steps from game<br>to practice plan</span></li>
+</ul>
+
+<section class="showcase">
+<div class="showcase-copy">
+<h2 class="h2">From the bleachers<br>to the gym floor</h2>
+<p class="caps-light">Your phone video in.<br>Next week&rsquo;s practice plan out.</p>
+<a class="btn btn-outline" href="#how">How it works</a>
+</div>
+
+<div class="phones" role="img" aria-label="Three Renshu screens: filming a game from the stands, the list of what to work on, and the practice plan.">
+<div class="phone">
+<div class="phone-screen screen-film" aria-hidden="true">
+<div class="pf-rec"><i></i>REC</div>
+<svg class="court" viewBox="0 0 200 250" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="4" y="4" width="192" height="242" rx="3"></rect>
+<path d="M72 4v70h56V4"></path>
+<circle cx="100" cy="74" r="24"></circle>
+<path d="M22 4v30a78 78 0 0 0 156 0V4"></path>
+<path d="M86 14h28"></path>
+<circle cx="100" cy="22" r="6"></circle>
+<path d="M70 246a30 30 0 0 1 60 0"></path>
+<g class="team-a"><circle cx="100" cy="152" r="7"></circle><circle cx="40" cy="112" r="7"></circle><circle cx="160" cy="112" r="7"></circle><circle cx="58" cy="40" r="7"></circle><circle cx="140" cy="62" r="7"></circle></g>
+<g class="team-b"><circle cx="100" cy="128" r="6"></circle><circle cx="54" cy="96" r="6"></circle><circle cx="146" cy="96" r="6"></circle><circle cx="74" cy="52" r="6"></circle><circle cx="126" cy="76" r="6"></circle></g>
+</svg>
+<div class="pf-shutter"></div>
+</div>
+</div>
+<div class="phone">
+<div class="phone-screen" aria-hidden="true">
+<div class="ps-status"><span>9:41</span><i></i></div>
+<div class="ps-top">
+<p class="ps-label">Saturday's game</p>
+<p class="ps-title">What to work on</p>
+</div>
+<div class="ps-body">
+<ul class="ps-list">
+<li class="is-top"><div>Getting back on defense<small>Start here</small></div></li>
+<li><div>Closing out on shooters</div></li>
+<li><div>Help-side positioning</div></li>
+</ul>
+</div>
+<div class="ps-home"></div>
+</div>
+</div>
+<div class="phone">
+<div class="phone-screen" aria-hidden="true">
+<div class="ps-status"><span>9:41</span><i></i></div>
+<div class="ps-top">
+<p class="ps-label">Tuesday practice · 90 min</p>
+<p class="ps-title">Get back on defense</p>
+</div>
+<div class="ps-body">
+<ol class="ps-list">
+<li><span>1</span>3-on-2 transition recovery</li>
+<li><span>2</span>Closeout &amp; contest</li>
+<li><span>3</span>4-on-4 shell defense</li>
+</ol>
+</div>
+<div class="ps-home"></div>
 </div>
 </div>
 </div>
 </section>
 
-<section id="how" style="background: #16243A; padding: 88px 24px">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.02em">From the bleachers to the gym floor</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 16px; background: #0F1B2D">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 40px; font-weight: 800; color: #FF8A3D">01</span>
-<h3 style="margin: 0; font-size: 21px">Film Saturday's game</h3>
-<p style="margin: 0; color: #C9D2DE">Record from the stands on any phone. No special camera or tripod required.</p>
+<section class="section" id="how">
+<div class="section-head">
+<h2 class="h2"><span>Three steps,</span><span class="light">no rewatching.</span></h2>
+<p class="caps-light">Starting with youth<br>basketball in Tokyo</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 16px; background: #0F1B2D">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 40px; font-weight: 800; color: #FF8A3D">02</span>
-<h3 style="margin: 0; font-size: 21px">Renshu reviews it</h3>
-<p style="margin: 0; color: #C9D2DE">The app spots what your team needs to work on, so you don't have to rewatch the whole game.</p>
+<ol class="steps">
+<li class="step">
+<span class="step-num">01</span>
+<div>
+<h3>Film Saturday's game</h3>
+<p>Record from the stands on any phone. No special camera or tripod required.</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 16px; background: #0F1B2D">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 40px; font-weight: 800; color: #FF8A3D">03</span>
-<h3 style="margin: 0; font-size: 21px">Run Tuesday's practice</h3>
-<p style="margin: 0; color: #C9D2DE">Get a ready-to-run practice plan with drills matched to what happened on the court.</p>
+</li>
+<li class="step">
+<span class="step-num">02</span>
+<div>
+<h3>Renshu reviews it</h3>
+<p>The app spots what your team needs to work on, so you don't have to rewatch the whole game.</p>
 </div>
+</li>
+<li class="step">
+<span class="step-num">03</span>
+<div>
+<h3>Run Tuesday's practice</h3>
+<p>Get a ready-to-run practice plan with drills matched to what happened on the court.</p>
 </div>
+</li>
+</ol>
+</section>
+
+<section class="section privacy" id="privacy">
+<div class="privacy-copy">
+<h2 class="h2"><span>Their game,</span><span class="light">their footage.</span></h2>
+<p>Game video shows children. Here is what happens to it, in plain words.</p>
+<a class="btn btn-outline" href="privacy.html">Read the privacy policy</a>
+</div>
+<div>
+<ul class="promises">
+<li>
+<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="13"></circle><path d="M8.5 14.5l3.6 3.6 7.4-8"></path></svg>
+<div>
+<h3>Never sold, never used for ads</h3>
+<p>We do not sell personal information, and we do not use uploaded video for advertising.</p>
+</div>
+</li>
+<li>
+<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="13"></circle><path d="M8.5 14.5l3.6 3.6 7.4-8"></path></svg>
+<div>
+<h3>Only for your team</h3>
+<p>Video is used only to produce analysis for your team. It is not shared with other teams or made public.</p>
+</div>
+</li>
+<li>
+<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="13"></circle><path d="M8.5 14.5l3.6 3.6 7.4-8"></path></svg>
+<div>
+<h3>Yours to delete</h3>
+<p>You can delete your video and your account at any time.</p>
+</div>
+</li>
+</ul>
+<p class="privacy-note">Before you film, make sure you have permission from your club, school, or the players' guardians.</p>
 </div>
 </section>
 
-<section id="download" style="padding: 96px 24px">
-<div style="max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center">
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.02em">Get Renshu</h2>
-<p style="margin: 0; color: #C9D2DE">Starting with youth basketball in Tokyo.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center">
-<a href="APP_STORE_URL" style="display: flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 12px; background: #FF8A3D; color: #0F1B2D; text-decoration: none; font-weight: 700">App Store (iPhone)</a>
-<a href="GOOGLE_PLAY_URL" style="display: flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 12px; background: #FF8A3D; color: #0F1B2D; text-decoration: none; font-weight: 700">Google Play (Android)</a>
+<section class="section" aria-labelledby="faq-title">
+<div class="section-head">
+<h2 class="h2" id="faq-title"><span>Good</span><span class="light">to know.</span></h2>
 </div>
+<div class="faq-list">
+<details>
+<summary>What video works best?</summary>
+<p>Any phone video of the full game, recorded from the stands. Try to keep as much of the court in frame as you can.</p>
+</details>
+<details>
+<summary>How do I delete my video or account?</summary>
+<p>Email us from the address on your account and we'll delete it. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+</details>
+<details>
+<summary>Which sports are supported?</summary>
+<p>Renshu is starting with youth basketball in Tokyo.</p>
+</details>
+</div>
+<p class="faq-more">More questions? Visit <a href="support.html">Support</a>.</p>
+</section>
+
+<section class="cta" id="download">
+<h2 class="display"><span>Film Saturday.</span><span class="light">Coach Tuesday.</span></h2>
+<p>Get Renshu on your phone.</p>
+<div class="badges">
+<a class="store-badge" href="APP_STORE_URL"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="144" height="48"></a>
+<a class="store-badge" href="GOOGLE_PLAY_URL"><img src="assets/google-play-badge.png" alt="Get it on Google Play" width="161" height="48"></a>
 </div>
 </section>
 
-<footer style="border-top: 1px solid #23344D; padding: 28px 24px">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 14px; color: #A9B4C4">
+</main>
+
+<footer class="footer">
+<div class="footer-row">
 <span>© 2026 Renshu</span>
-<span style="display: flex; gap: 20px; flex-wrap: wrap"><a href="support.html" style="color: #A9B4C4">Support</a><a href="privacy.html" style="color: #A9B4C4">Privacy Policy</a></span>
-<a href="mailto:ohkubo@engineering.upenn.edu" style="color: #A9B4C4">ohkubo@engineering.upenn.edu</a>
+<span class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></span>
+<a href="mailto:ohkubo@engineering.upenn.edu">ohkubo@engineering.upenn.edu</a>
 </div>
+<p class="legal">Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
 </footer>
 
 </div>
