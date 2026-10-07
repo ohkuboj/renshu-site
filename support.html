@@ -4,35 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support — Renshu</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#0F1B2D;color:#F2F4F7;font-family:'Noto Sans JP',system-ui,sans-serif;font-size:17px;line-height:1.7}
-a{color:#FFB37A}
-header,main,footer{max-width:760px;margin:0 auto;padding:24px}
-.brand{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;color:#F2F4F7;text-decoration:none}
-h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(34px,5vw,48px);line-height:1.1;margin:24px 0 8px}
-h2{font-size:20px;margin:0 0 6px}
-p{color:#C9D2DE;margin:0}
-.card{background:#16243A;border-radius:16px;padding:24px;margin:16px 0}
-.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:12px;background:#FF8A3D;color:#0F1B2D;font-weight:700;text-decoration:none;margin-top:16px}
-footer{border-top:1px solid #23344D;font-size:14px;color:#A9B4C4;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;margin-top:48px}
-footer a{color:#A9B4C4}
-</style>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&text=%E7%B7%B4%E7%BF%92&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header><a class="brand" href="index.html">Renshu</a></header>
-<main>
-<h1>Support</h1>
-<p>Questions, bugs, or feedback? Email us and we'll get back to you, usually within two business days. English or Japanese is fine.</p>
-<a class="btn" href="mailto:ohkubo@engineering.upenn.edu?subject=Renshu%20support">Email support</a>
+<div class="page">
 
-<div style="margin-top:48px">
+<header class="nav">
+<a class="brand" href="index.html">Renshu <span lang="ja">練習</span></a>
+<a class="btn btn-outline" href="index.html#download">Download App</a>
+</header>
+
+<main class="doc">
+<h1 class="h2">Support</h1>
+<p>Questions, bugs, or feedback? Email us and we'll get back to you, usually within two business days. English or Japanese is fine.</p>
+<a class="btn btn-primary" href="mailto:ohkubo@engineering.upenn.edu?subject=Renshu%20support">Email support</a>
+
+<div class="faq-cards">
 <div class="card"><h2>What video works best?</h2><p>Any phone video of the full game, recorded from the stands. Try to keep as much of the court in frame as you can.</p></div>
 <div class="card"><h2>How do I delete my video or account?</h2><p>Email us from the address on your account and we'll delete it. See our <a href="privacy.html">Privacy Policy</a> for details.</p></div>
 <div class="card"><h2>Which sports are supported?</h2><p>Renshu is starting with youth basketball in Tokyo.</p></div>
 </div>
 </main>
-<footer><span>© 2026 Renshu</span><span style="display:flex;gap:20px"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a></span></footer>
+<footer class="footer">
+<div class="footer-row"><span>© 2026 Renshu</span><span class="footer-links"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a></span></div>
+</footer>
+
+</div>
 </body>
 </html>

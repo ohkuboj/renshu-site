@@ -6,6 +6,8 @@ Three static pages, no build step:
 - `privacy.html` — privacy policy (use as the App Store / Google Play privacy policy URL)
 - `support.html` — support page (use as the App Store support URL)
 
+All three share `styles.css`; the colours are the variables at the top of that file. `assets/` holds the official App Store and Google Play badges; do not recolour or restyle the badge artwork.
+
 ## Before going live
 
 1. In `index.html`, replace `APP_STORE_URL` and `GOOGLE_PLAY_URL` (2 of each) with the store listing links.
