@@ -1,261 +1,56 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Renshu — Saturday's game, Tuesday's practice</title>
-<meta name="description" content="Renshu turns ordinary video of a youth basketball game into next week's practice plan.">
-<!-- Store links: replace APP_STORE_URL and GOOGLE_PLAY_URL below (2 of each) once the listings are live. -->
-<link rel="preconnect" href="https://api.fontshare.com">
-<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,500,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&text=%E7%B7%B4%E7%BF%92&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="page">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Renshu — See the game. Coach the next one.</title>
+<meta name="description" content="Turn game film into a better practice. Renshu helps basketball coaches review moments, give players a clear cue, and build a plan.">
+<link rel="stylesheet" href="landing.css"></head><body>
+<div class="landing">
 
-<header class="nav">
-<a class="brand" href="index.html">Renshu <span lang="ja">練習</span></a>
-<nav class="nav-links" aria-label="Main">
-<a href="#how">How it works</a>
-<a href="#privacy">Privacy</a>
-<a href="support.html">Support</a>
-</nav>
-<a class="btn btn-outline" href="#download">Download App</a>
-</header>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a href="index.html" class="wordmark" aria-label="Renshu home"><span class="brandIcon" aria-hidden="true">◉</span> Renshu<span class="brandJapanese" lang="ja">練習</span></a>
+      <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#coaching-tools">Coaching tools</a><a href="#questions">FAQs</a><a href="support.html">Support</a></nav>
+      <a class="primary" href="support.html">Request a pilot <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main" class="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow"><span></span> FROM FILM TO FLOOR</p>
+          <h1 id="hero-title">See the game.<br />Coach the<br /><em>next one.</em></h1>
+          <p class="intro">Turn game film into a better practice. Review the moments that matter, give players a clear cue, and build a plan for what comes next.</p>
+          <div class="actions"><a class="primary" href="support.html">Request a pilot <span aria-hidden="true">↗</span></a><a class="secondary" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div>
+          <p class="fine">An early pilot for basketball coaches. Help shape what comes next.</p>
+        </div>
+        <figure class="preview">
+          <div class="previewCard">
+            <div class="previewHeader"><span><i></i><i></i><i></i></span><span>COURTSIDE BY RENSHU</span><span class="previewDot">●</span></div>
+            <div class="film"><img src="assets/court-preview.svg" alt="Illustrated basketball court with a coaching arrow" width="1280" height="720" fetchpriority="high" /><span class="filmLabel">COACHING WORKFLOW · ILLUSTRATION</span><a href="support.html" class="playLink" aria-label="Request a coaching pilot">▶</a></div>
+            <div class="previewTimeline"><span>00:00</span><span class="timelineTrack"><i></i></span><span>00:20</span></div>
+            <div class="coachingNote"><div><span class="noteLabel">A QUESTION TO TAKE TO THE FILM</span><span class="reviewLabel">To review</span></div><h2>How quickly do we recover?</h2><p>Who protects the rim, and who stops the ball?</p><a href="#how-it-works">See the workflow <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figcaption>Your footage. Your observations. A plan you can use.</figcaption>
+        </figure>
+      </section>
 
-<main>
+      <section class="problem" aria-labelledby="problem-title"><div><p class="eyebrow">MAKE THE FILM COUNT</p><h2 id="problem-title">The game ends.<br />The learning doesn’t.</h2><p>You saw the missed rotation. The crowded lane. The extra pass that worked. Keep those moments connected to what you teach next.</p></div><div class="principles"><div><span>Less searching.</span><p>Return to a tagged moment instead of scrubbing through the whole game.</p></div><div><span>More purpose.</span><p>Give every practice priority a clip, a coaching cue, and a clear target.</p></div></div></section>
 
-<section class="hero">
-<h1 class="display"><span>Saturday&rsquo;s game,</span><span class="light">Tuesday&rsquo;s practice.</span></h1>
+      <section id="how-it-works" class="section" aria-labelledby="workflow-title"><p class="eyebrow">A SIMPLE COACHING ROUTINE</p><h2 id="workflow-title">One moment.<br />A better next practice.</h2><p class="sectionIntro">Keep the connection between what happened, what it means, and what to work on.</p><div class="steps"><article><span>01</span><h3>Bring the game.</h3><p>Add your footage. Find the possession with playback, slow motion, and looping.</p></article><article><span>02</span><h3>Find the teaching moment.</h3><p>Review player candidates, mark the action, and add your coaching cue. You decide what the footage confirms.</p></article><article><span>03</span><h3>Take it to practice.</h3><p>Turn a confirmed observation into a drill. Set the time, setup, and success target, then export your plan.</p></article></div></section>
 
-<div class="hero-panel">
-<svg class="play-line" viewBox="0 0 1000 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-<path class="pass" d="M476 254 L622 216"></path>
-<path class="cut" pathLength="1" d="M356 345 C366 240 416 120 522 112 C600 106 610 200 668 204"></path>
-<path class="tip" d="M647 188.7 L668 204 L645.1 216.2"></path>
-<circle class="mark" cx="455" cy="262" r="15"></circle>
-<path class="mark" d="M547 47 l26 26 m0 -26 l-26 26"></path>
-</svg>
-<div class="hero-copy">
-<p class="lede">Renshu turns ordinary video of a youth match into next week's practice plan — so you spend your evenings coaching, not rewatching footage.</p>
-<a class="btn btn-primary" href="#how">See how it works</a>
-<div class="stores">
-<p>For youth basketball coaches.<br>On iPhone and Android.</p>
-<div class="badges">
-<a class="store-badge" href="APP_STORE_URL"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="144" height="48"></a>
-<a class="store-badge" href="GOOGLE_PLAY_URL"><img src="assets/google-play-badge.png" alt="Get it on Google Play" width="161" height="48"></a>
-</div>
-</div>
-</div>
-</div>
+      <section id="coaching-tools" class="section" aria-labelledby="tools-title"><div class="sectionHeading"><div><p class="eyebrow">BUILT AROUND THE COACH</p><h2 id="tools-title">Your eye for the game.<br />A place to put it to work.</h2></div><p>Use the film as evidence. Keep your judgment at the center of every decision.</p></div><div class="tools">
+        <article><span aria-hidden="true">↺</span><h3>Watch it again. See more.</h3><p>Slow down a possession, loop a moment, and add arrows or markers to explain what you see.</p></article>
+        <article><span aria-hidden="true">⌖</span><h3>Give each player a focus.</h3><p>Connect observations to a player. Keep their review, coaching cues, and reflections together.</p></article>
+        <article><span aria-hidden="true">≡</span><h3>Leave with a practice plan.</h3><p>Build drills from confirmed moments, arrange your session, and export a plan for the floor.</p></article>
+        <article><span aria-hidden="true">✓</span><h3>Know what the film shows.</h3><p>Mark limited or blocked footage. Keep review prompts separate from confirmed observations.</p></article>
+      </div></section>
 
-<div class="phone hero-phone" role="img" aria-label="The Renshu app showing Tuesday's practice plan, Get back on defense, with three drills built from Saturday's game video.">
-<div class="phone-screen" aria-hidden="true">
-<div class="ps-status"><span>9:41</span><i></i></div>
-<div class="ps-top">
-<p class="ps-label">Tuesday practice · 90 min</p>
-<p class="ps-title">Get back on defense</p>
-<svg class="ps-court" viewBox="0 0 240 112" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-<rect x="1" y="1" width="238" height="110" rx="8"></rect>
-<path d="M92 1v46h56V1"></path>
-<path d="M100 47a20 20 0 0 0 40 0"></path>
-<path d="M34 1v8a86 86 0 0 0 172 0V1"></path>
-<circle cx="120" cy="12" r="4"></circle>
-<g class="team-a"><circle cx="120" cy="66" r="5"></circle><circle cx="82" cy="52" r="5"></circle><circle cx="158" cy="52" r="5"></circle><circle cx="62" cy="22" r="5"></circle><circle cx="178" cy="22" r="5"></circle></g>
-</svg>
-</div>
-<div class="ps-body">
-<p class="ps-label">Drills</p>
-<ol class="ps-list">
-<li><span>1</span>3-on-2 transition recovery</li>
-<li><span>2</span>Closeout &amp; contest</li>
-<li><span>3</span>4-on-4 shell defense</li>
-</ol>
-<p class="ps-note">Built from Saturday's game video</p>
-</div>
-<div class="ps-home"></div>
-</div>
-</div>
-</section>
+      <section id="questions" class="questions" aria-labelledby="questions-title"><div><p class="eyebrow">BEFORE YOU START</p><h2 id="questions-title">A few things<br />worth knowing.</h2></div><div>
+        <details><summary>Can I use my own footage?</summary><p>The pilot lets coaches add recordings, review moments, and build practice plans. Contact us to discuss access and the footage you have permission to use.</p></details>
+        <details><summary>Does Renshu make the coaching decisions?</summary><p>No. Detection helps surface person and ball candidates. You review identities, confirm observations, and choose the coaching focus. Automatic detections do not become confirmed statistics.</p></details>
+        <details><summary>Where is my work saved?</summary><p>The pilot supports a local browser workspace and configured private accounts. Video files stay separate from session exports. We will explain the storage setup before you join; see our <a href="privacy.html">privacy policy</a> for the current policy.</p></details>
+        <details><summary>Can my whole staff share a workspace?</summary><p>Each account has a private workspace. Shared staff membership is not available yet. You can export a session or practice plan to share it deliberately.</p></details>
+      </div></section>
 
-<!-- TODO(human): these three facts are the page's proof. They are true today but generic.
-     Replace them with numbers only the team knows, for example games analysed so far or
-     minutes from upload to a finished plan. Keep each to a number plus a two-line label. -->
-<ul class="facts">
-<li class="fact"><b>1</b><span class="caps-light">Phone, filmed<br>from the stands</span></li>
-<li class="fact"><b>0</b><span class="caps-light">Tripods or<br>special cameras</span></li>
-<li class="fact"><b>3</b><span class="caps-light">Steps from game<br>to practice plan</span></li>
-</ul>
-
-<section class="showcase">
-<div class="showcase-copy">
-<h2 class="h2">From the bleachers<br>to the gym floor</h2>
-<p class="caps-light">Your phone video in.<br>Next week&rsquo;s practice plan out.</p>
-<a class="btn btn-outline" href="#how">How it works</a>
-</div>
-
-<div class="phones" role="img" aria-label="Three Renshu screens: filming a game from the stands, the list of what to work on, and the practice plan.">
-<div class="phone">
-<div class="phone-screen screen-film" aria-hidden="true">
-<div class="pf-rec"><i></i>REC</div>
-<svg class="court" viewBox="0 0 200 250" fill="none" stroke="currentColor" stroke-width="2">
-<rect x="4" y="4" width="192" height="242" rx="3"></rect>
-<path d="M72 4v70h56V4"></path>
-<circle cx="100" cy="74" r="24"></circle>
-<path d="M22 4v30a78 78 0 0 0 156 0V4"></path>
-<path d="M86 14h28"></path>
-<circle cx="100" cy="22" r="6"></circle>
-<path d="M70 246a30 30 0 0 1 60 0"></path>
-<g class="team-a"><circle cx="100" cy="152" r="7"></circle><circle cx="40" cy="112" r="7"></circle><circle cx="160" cy="112" r="7"></circle><circle cx="58" cy="40" r="7"></circle><circle cx="140" cy="62" r="7"></circle></g>
-<g class="team-b"><circle cx="100" cy="128" r="6"></circle><circle cx="54" cy="96" r="6"></circle><circle cx="146" cy="96" r="6"></circle><circle cx="74" cy="52" r="6"></circle><circle cx="126" cy="76" r="6"></circle></g>
-</svg>
-<div class="pf-shutter"></div>
-</div>
-</div>
-<div class="phone">
-<div class="phone-screen" aria-hidden="true">
-<div class="ps-status"><span>9:41</span><i></i></div>
-<div class="ps-top">
-<p class="ps-label">Saturday's game</p>
-<p class="ps-title">What to work on</p>
-</div>
-<div class="ps-body">
-<ul class="ps-list">
-<li class="is-top"><div>Getting back on defense<small>Start here</small></div></li>
-<li><div>Closing out on shooters</div></li>
-<li><div>Help-side positioning</div></li>
-</ul>
-</div>
-<div class="ps-home"></div>
-</div>
-</div>
-<div class="phone">
-<div class="phone-screen" aria-hidden="true">
-<div class="ps-status"><span>9:41</span><i></i></div>
-<div class="ps-top">
-<p class="ps-label">Tuesday practice · 90 min</p>
-<p class="ps-title">Get back on defense</p>
-</div>
-<div class="ps-body">
-<ol class="ps-list">
-<li><span>1</span>3-on-2 transition recovery</li>
-<li><span>2</span>Closeout &amp; contest</li>
-<li><span>3</span>4-on-4 shell defense</li>
-</ol>
-</div>
-<div class="ps-home"></div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="section" id="how">
-<div class="section-head">
-<h2 class="h2"><span>Three steps,</span><span class="light">no rewatching.</span></h2>
-<p class="caps-light">Starting with youth<br>basketball in Tokyo</p>
-</div>
-<ol class="steps">
-<li class="step">
-<span class="step-num">01</span>
-<div>
-<h3>Film Saturday's game</h3>
-<p>Record from the stands on any phone. No special camera or tripod required.</p>
-</div>
-</li>
-<li class="step">
-<span class="step-num">02</span>
-<div>
-<h3>Renshu reviews it</h3>
-<p>The app spots what your team needs to work on, so you don't have to rewatch the whole game.</p>
-</div>
-</li>
-<li class="step">
-<span class="step-num">03</span>
-<div>
-<h3>Run Tuesday's practice</h3>
-<p>Get a ready-to-run practice plan with drills matched to what happened on the court.</p>
-</div>
-</li>
-</ol>
-</section>
-
-<section class="section privacy" id="privacy">
-<div class="privacy-copy">
-<h2 class="h2"><span>Their game,</span><span class="light">their footage.</span></h2>
-<p>Game video shows children. Here is what happens to it, in plain words.</p>
-<a class="btn btn-outline" href="privacy.html">Read the privacy policy</a>
-</div>
-<div>
-<ul class="promises">
-<li>
-<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="13"></circle><path d="M8.5 14.5l3.6 3.6 7.4-8"></path></svg>
-<div>
-<h3>Never sold, never used for ads</h3>
-<p>We do not sell personal information, and we do not use uploaded video for advertising.</p>
-</div>
-</li>
-<li>
-<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="13"></circle><path d="M8.5 14.5l3.6 3.6 7.4-8"></path></svg>
-<div>
-<h3>Only for your team</h3>
-<p>Video is used only to produce analysis for your team. It is not shared with other teams or made public.</p>
-</div>
-</li>
-<li>
-<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="14" r="13"></circle><path d="M8.5 14.5l3.6 3.6 7.4-8"></path></svg>
-<div>
-<h3>Yours to delete</h3>
-<p>You can delete your video and your account at any time.</p>
-</div>
-</li>
-</ul>
-<p class="privacy-note">Before you film, make sure you have permission from your club, school, or the players' guardians.</p>
-</div>
-</section>
-
-<section class="section" aria-labelledby="faq-title">
-<div class="section-head">
-<h2 class="h2" id="faq-title"><span>Good</span><span class="light">to know.</span></h2>
-</div>
-<div class="faq-list">
-<details>
-<summary>What video works best?</summary>
-<p>Any phone video of the full game, recorded from the stands. Try to keep as much of the court in frame as you can.</p>
-</details>
-<details>
-<summary>How do I delete my video or account?</summary>
-<p>Email us from the address on your account and we'll delete it. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
-</details>
-<details>
-<summary>Which sports are supported?</summary>
-<p>Renshu is starting with youth basketball in Tokyo.</p>
-</details>
-</div>
-<p class="faq-more">More questions? Visit <a href="support.html">Support</a>.</p>
-</section>
-
-<section class="cta" id="download">
-<h2 class="display"><span>Film Saturday.</span><span class="light">Coach Tuesday.</span></h2>
-<p>Get Renshu on your phone.</p>
-<div class="badges">
-<a class="store-badge" href="APP_STORE_URL"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="144" height="48"></a>
-<a class="store-badge" href="GOOGLE_PLAY_URL"><img src="assets/google-play-badge.png" alt="Get it on Google Play" width="161" height="48"></a>
-</div>
-</section>
-
-</main>
-
-<footer class="footer">
-<div class="footer-row">
-<span>© 2026 Renshu</span>
-<span class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></span>
-<a href="mailto:ohkubo@engineering.upenn.edu">ohkubo@engineering.upenn.edu</a>
-</div>
-<p class="legal">Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
-</footer>
-
-</div>
-</body>
-</html>
+      <section class="closing"><p class="eyebrow">BUILT FOR THE NEXT PRACTICE</p><h2>Your next coaching cue<br />is already in the film.</h2><p>Start with one clip. Find one thing to work on.</p><a class="primary" href="support.html">Talk to us about a pilot <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="footer"><a class="wordmark" href="index.html">Renshu <span class="brandJapanese" lang="ja">練習</span></a><p>See the moment. Coach the next one.</p><a href="privacy.html">Privacy</a><a href="support.html">Support</a></footer>
+  </div>
+</body></html>
